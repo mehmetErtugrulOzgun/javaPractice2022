@@ -1,0 +1,15 @@
+
+
+1-)
+Abstract Banka class creat ediniz. fields double Bakiye;
+parametreli constructer creat ediniz.
+paramtersiz constructer creat ediniz --->print:Hesap hareketleri...
+parametreli method paraYatir ve parametreli paraCek abs method creat ediniz
+
+2-)
+Banka classin sup classi BenimHesabim class creat ediniz
+parametreli bakiye print eden constructer creat ediniz
+
+3-)
+HesapHareketlerim classinda obje ile islemler yapip yazdiriniz
+

@@ -1,0 +1,27 @@
+Excepitons
+
+1-) Iki tur exceptions vardir.
+
+i-) Compile Time (checked) Exceptions: Kod creat edilirken javanin ongordugu olasi sorunlara
+karsi hatanin altinin cizilmesi ama her alti kirmizi cizilen kod exceptions degildir.
+
+ii-) Run Time (unchecked) Exceptions: Kod run edildiğinde olusan exceptionsdir.
+
+
+2-) Kod creat edilirken Exceptions kullanilmasi gerekirse:
+
+a------->    Add thows declarations: Hata olustugunda consola hata ile ilgili mesaj verir.
+b------->    Try-Catch block: Hata olustugunda hatanin yazdirilmasi ve handle edilmesini saglar.
+
+3-) Try blocktan sonra en az bir tane catch block olmali aksi durumda CTE verir.
+
+4-) Try-Catch blocklar try body hatasiz calisirsa catch body calismaz.
+Catch body, try bodyde ki exceptions da calisir
+
+5-) Try bodyden sonra 1 den fazla catch body creat edilebilir.
+Olusan exceptions hangi catch ile ilgiliyse o catch body calisir.
+Ayni anda sadece tek bir catch body calisir.
+
+6-) Tek try ama birden cok catch body olan durumlarda catch bodyler arasinda yukaridan asagiya
+child-parent iliskisi olmali yok CTE verir (erisilemez catch blogu). Catch bodyler arasinda
+parent-child iliskisi yoksa siralama onemli degil yukaridan asagiya catchler calisir

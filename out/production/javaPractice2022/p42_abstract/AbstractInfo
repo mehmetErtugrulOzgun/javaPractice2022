@@ -1,0 +1,28 @@
+
+
+ABSTRACT CLASSES
+
+1-) parent classdaki bodysiz methodlara abstract methodlar denir.
+bazi child parent iliskisinde ki classlarda child class parent classin
+bazi methodlarini kullanmak zorunda ise o methodlar abstract hale getirilir.
+
+!!ABSTRACT CLASSLARDA OBJE ASLA CREAT EDILEMEZ.
+
+2-) Bir methodu asbtract yapmak icin ----> {body} silinir ve return
+typedan once "abstract" keyword kullanilir.
+
+3-) Abstract bir method sadece abstract classda creat edilir.
+Concreat classda asla abstract method creat edilmez.
+
+4-) Abstract bir class da hem abstract hemde concreat method olabilir.
+
+5-) Concreat class, abstract bir classa extend edildiginde abstract classtaki
+ tum methodlari implement(uyarlama) zorundadir ama concreat methodlari implement etmeyebilir.
+
+6-) Bir abstract class baska bir abstract classa extend edildiginde herhangi bir
+metohud overriding etmek zorunda degil.Cunku javaya gore abstract child classinda
+altinda mutlaka concreat bir child class vardir.
+
+7-) Final, private ve static methodlar abstract olamaz.
+
+8-) Abstract classta concreat variable olabilir ama bu variable kesinlikle abstract olamaz.

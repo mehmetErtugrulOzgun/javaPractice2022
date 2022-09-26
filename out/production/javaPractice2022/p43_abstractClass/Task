@@ -1,0 +1,10 @@
+1-) Abstract bir insan class creat ediniz. fields: private String isim;
+private String soyIsim;
+parametresiz constructor creat ediniz.
+abstract calis method creat ediniz
+concreate bilgilendirm method creat ediniz --->fields print etsin
+concreate isimDegistir method creat ediniz --->fields parametre alsin ama atama yapsin
+
+2-) insan classina sub class olacak sekilde Calisan class creat ediniz fields: private int calisanId;
+calisanId==0 ise calisan degil aksi durumda calisan oldugunu kontrol edip id si ile yazdiriniz
+3 farkli obje ile ozelliklerinizi yazdiriniz

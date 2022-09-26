@@ -1,0 +1,69 @@
+INTERFACE
+INTERFACE ASLA BIR CLASS DEGILDIR.
+
+1-)
+Interface yapilarda concreat method asla creat edilemez sadece abstract methodlar creat edilir.
+
+2-)
+Java multiple inheritance desteklemez. Ancak interface parentlar multiple inheritancei destekler
+
+3-)
+Birden fazla parent classlarda ayni isimli methodlarin olmasi durumunda child class ayni isimli
+farkli bodyli methodlar icin secim yapamaz. Fakat interfacelerde methodlarin bodyleri olmadigindan ayni
+isimli methodlar birbiri ile tamamen ayni oldugu icin secim soz konusu degildir. Child class, parent
+interfaceden ayni isimli methodlardan birini override ederek bu sorun cozulur.
+
+Trick : Parent interfacelerde ayni isimli fakat farkli return typeli methodlar childe classda CTE verir.
+
+4-)
+Interface yapilarda tum methodlar abstract olmak zorunda oldugundan signuture "abstract"
+keywordu yazilmayabilir.
+    public void koltuk();   //abstract method , abstract keyword kullanilmis
+    public void ayna();     //abstract method, abstract keyword kullanilmamis
+
+5-)
+Interfacelerde ki tum memberlar public oldugu icin AccssModifier yazilmasa da public
+ile ayni ozelligi verir.
+    public void ayna(); <-------> void ayna(); ----> ayni islemi yaparlar
+
+Trick : normal classlarda AccessModifier yazilmazsa default degerini alir.
+        Ancak interfacelerde AccessModifier yazilmazsa public olur.
+
+
+6-)
+Interfaceler kendi arasinda parent child(extends) iliskisi kurulabilir.
+
+    Trick :
+    class----->class : extends
+    interface----->interface : extends
+    interface----->class : implements
+    class---->interface : OLAMAZ.Interfacein parenti class olamaz
+
+7-)
+Interfacelerde variablelar mutlaka finaldir.
+    a-) Final variablelar italik bold'dur ve buyuk harf ile yazilmali
+    b-) Final variablelar initialize edilmezse CTE verir.
+
+8-)
+Interfacelerde variablelar mutlaka staticdir. Dolayisiyla obje creat etmeden
+interface ismi ile ulasilabilir.
+
+9-)
+Interfacelerde tum memberlar publictir.
+Dolayisiyla tum interface variablelari ----> public+static+final (yazsa da yazmasa da ).
+
+Trick :
+Ayni isimli ve ayni data typeli variablelar parent interfacelerde creat edip object kullanarak call
+edilirse Java hangisini sececegine karar veremez ve CTE verir. CTE almamk icin ayni isimli variablelar
+kesinlikle "interface" isimleri kullanarak call edilmelidir.
+        System.out.println(S1.RENK);----> CTE verir
+
+10-)
+Interface yapilarda istenirse abstract olmayan concrete method creat edilebilir.
+    a-) AccessModifier den sonra "default" veya "static" keyword kullanilmali
+    b-) Interface yapilarda concrete method icin kullanilan "default" keywordu
+    kesinlikle AccessModifier turunu vermez
+    c-) Interface yapilarda concrete method child class tarafindan override edilmek zorunda degildir.
+    d-) Interface yapilarda default olarak creat edilen method child classa ancak obje ile call edilir.
+    e-) Interface yapilarda static olarak creat edilen concrete method child classa ancak DataType(interface name) ile call edilir
+
