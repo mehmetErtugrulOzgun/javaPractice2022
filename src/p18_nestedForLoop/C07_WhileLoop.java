@@ -7,10 +7,14 @@ public class C07_WhileLoop {
     public static void main(String[] args) {
         // kullanicidan kac sayi toplamak istedigini alin
         // bu sayilari alin ve bu sayilarin toplamini ekrana yazdirin
-        int sayiAdedi=3;
+
         Scanner scan = new Scanner(System.in);
+        System.out.println("Kac sayi toplamak istersiniz");
+
+        int sayiAdedi=scan.nextInt();
         int sayi=0;
         int toplam=0;
+
         for (int i = 1; i <=sayiAdedi ; i++) {
             System.out.println("lutfen bir sayi giriniz");
             sayi= scan.nextInt();

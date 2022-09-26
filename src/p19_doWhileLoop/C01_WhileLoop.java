@@ -1,20 +1,24 @@
 package p19_doWhileLoop;
 
+import java.util.Scanner;
+
 public class C01_WhileLoop {
     public static void main(String[] args) {
 
-        // kullanicidan bir sayi alin ve bu sayiyi ttam bolen sayilari
+        // kullanicidan bir sayi alin ve bu sayiyi tam bolen sayilari
         // ve toplam kac tane olduklarini ekranda yazdirin
 
-        int input=646969320;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Bir tam sayi giriniz");
+        int sayi=scan.nextInt();
 
-        // for loop ile de yapabiliiz ama while loop ile yapmak istiyoruz
+        // for loop ile de yapabiliriz ama while loop ile yapmak istiyoruz
 
-        int bolen=1;
+        int bolen=2;
         int sayac=0;
 
-        while (bolen<=input){
-            if (input%bolen==0)
+        while (bolen<=sayi){
+            if (sayi%bolen==0)
             {
                 System.out.println(bolen + " ");
                 sayac ++;
@@ -22,6 +26,6 @@ public class C01_WhileLoop {
             bolen++;
         }
         System.out.println("");
-        System.out.println(input + " sayisini bolen " + sayac + " adet sayi vardir");
+        System.out.println(sayi + " sayisini bolen " + sayac + " adet sayi vardir");
     }
 }

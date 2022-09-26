@@ -1,23 +1,35 @@
 package p18_nestedForLoop;
 
+import java.util.Scanner;
+
 public class C06_WhileLoop {
 
     public static void main(String[] args) {
-        // kullanicidan iki tamsayi alip
-        // bu sayilari ve aralarindaki tum tamsayilari yazdiran bir kod olusturun
-        int baslangic=40;
-        int bitis=60;
-        for (int i = baslangic; i <=bitis ; i++) {
-            System.out.print(i + " ");
+        //  Kullanicidan baslangic ve bitis degerlerini alin. Baslangic degeri ve bitis
+        //  degeri dahil aradalarindaki tum cift tamsayilari while loop kullanarak ekrana
+        //  yazdiriniz
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Baslangic degeri");
+        int baslangicDegeri = scan.nextInt();
+
+        System.out.println("Bitis degeri");
+        int bitisDegeri = scan.nextInt();
+
+        //  For loop ile
+        for (int i=baslangicDegeri;i<=bitisDegeri;i++){
+            if (i%2==0){
+                System.out.print(i+" ");
+            }
         }
         System.out.println("");
-        // ayni soruyu while loop ile yapalim
-        int i=baslangic;
-        while (i<=bitis){
-            System.out.print(i + " ");
-            i++;
+        //  While loop ile
+        while (baslangicDegeri<=bitisDegeri){
+            if (baslangicDegeri%2==0){
+                System.out.print(baslangicDegeri+" ");
+            }
+            baslangicDegeri++;
         }
-        System.out.println("");
-        System.out.println(baslangic); // 61
     }
 }

@@ -1,5 +1,7 @@
 package p17_forLoop;
 
+import java.util.Scanner;
+
 public class C05_FoorLoop {
     public static void main(String[] args) {
 
@@ -7,11 +9,15 @@ public class C05_FoorLoop {
         // 1’den baslayarak girilen sayiya kadar
         // 3’un kati olan sayilari yazdirin.
 
-        int sayi=31;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("100den kucuk bir pozitif tam sayi giriniz");
+        int sayi=scan.nextInt();
 
         for (int i=1; i<=sayi; i ++)
         {
-            System.out.printf(i + " ");
+            if (i%3==0){
+                System.out.printf(i + " ");
+            }
         }
     }
 }

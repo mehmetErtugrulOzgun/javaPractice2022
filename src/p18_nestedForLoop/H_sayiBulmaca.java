@@ -13,7 +13,7 @@ public class H_sayiBulmaca {
         int sayi=rnd.nextInt(100);  // burasi 100'den kucuk rastgele bir sayi olusturur
 
         Scanner scan = new Scanner(System.in);
-        int tahmin=0;
+        int tahmin=-1;
         int sayac=1;
         while (sayi != tahmin){
             System.out.println("Lutfen bir sayi giriniz");
@@ -27,5 +27,4 @@ public class H_sayiBulmaca {
         }
         System.out.println("Tuttugum sayiyi " + (sayac-1) + " tahminde buldunuz");
     }
-
 }

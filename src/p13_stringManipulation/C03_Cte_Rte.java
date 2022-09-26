@@ -9,6 +9,7 @@ public class C03_Cte_Rte {
         // tum projede alti cizili bir kod varsa projede hic bir class calismaz
 
         String str =" Javada her sey zamanla oturur";
+        System.out.println(str.substring(30));
         System.out.println(str.substring(5000));
 
 

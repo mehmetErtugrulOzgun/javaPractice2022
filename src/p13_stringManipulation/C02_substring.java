@@ -11,10 +11,13 @@ public class C02_substring {
         // \ ifadesi "" bunun devam ettigini nutellanin basindaki "" bunlari karakter olarak gosterir
 
         int ilkSpace= str.indexOf(" "); // 4
-        int ikinciSpace= str.indexOf(" ", ilkSpace+1);
-        int ucuncuSpace= str.indexOf(" ", ikinciSpace+1);
+        int ikinciSpace= str.indexOf(" ", ilkSpace+1); //7
+        int ucuncuSpace= str.indexOf(" ", ikinciSpace+1); //12
+        System.out.println(ikinciSpace);
+        System.out.println(ucuncuSpace);
 
         String aramaSonucSayisiStr = str.substring(ikinciSpace+1,ucuncuSpace);
+        System.out.println(aramaSonucSayisiStr);
 
         int aramaSonucSayisiInt=Integer.valueOf(aramaSonucSayisiStr);
 

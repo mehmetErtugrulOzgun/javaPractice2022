@@ -3,7 +3,7 @@ package p15_methodCreation;
 public class C04 {
     // main method olmadan da bir class olusturulabilir
     // ancak bu class direk calismaz
-    // sadece depoz gorevi gorur
+    // sadece depo gorevi gorur
     // baska classlardan kullanilabilecek method veya variablelari barindirir
     public static void ucHarfiTersineCevir(String kelime) {
         String tersKelime=kelime.substring(3) +

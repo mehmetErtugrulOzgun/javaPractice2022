@@ -1,18 +1,14 @@
 package p17_forLoop;
 
+import java.util.Scanner;
+
 public class C03_ForLoop {
     public static void main(String[] args) {
+        // 100den baslayarak 50ye kadar olan sayilari aralarinde virgul olarak ayni satirda yazdirin
 
-        // boyle 10 kez yazdirabiliriz
-        // System.out.println("java guzeldir");
-
-        for (int i=1; i<=10;i++)
-        {
-            System.out.println(i +"."+ " Java guzeldir");
+        for (int i=100;i>=51;i--){
+            System.out.print(i+", ");
         }
-        for (int i=1; i<=41;i++)
-        {
-            System.out.println(i+" Masallah :D");
+        System.out.print("50");
         }
     }
-}

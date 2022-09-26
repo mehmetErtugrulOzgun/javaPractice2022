@@ -1,6 +1,6 @@
 package p04_dataCasting_Increment;
 
-public class C05_IncrementDecreöemt {
+public class C05_IncrementDecrement {
     public static void main(String[] args) {
         int sayi=20;
         System.out.println(sayi+10); //30
